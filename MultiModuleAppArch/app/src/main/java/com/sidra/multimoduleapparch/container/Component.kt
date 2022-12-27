@@ -2,6 +2,7 @@ package com.sidra.multimoduleapparch.container
 
 import com.sidra.local_data_source.IDaoImpl.IDaoImpl
 import com.sidra.multimoduleapparch.adapter.NoteAdapter
+import com.sidra.multimoduleapparch.adapter.PostsAdapter
 import com.sidra.multimoduleapparch.viewmodel.AppViewModel
 import com.sidra.service.Service.ServiceRepo
 import org.koin.android.ext.android.inject
@@ -14,5 +15,6 @@ class Component : KoinComponent {
      val service : ServiceRepo by inject()
      val daoImpl : IDaoImpl by inject()
      val noteAdapter : NoteAdapter by inject()
+     val postAdapter : PostsAdapter by inject()
 
 }
